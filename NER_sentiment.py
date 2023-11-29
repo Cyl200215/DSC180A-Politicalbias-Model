@@ -12,4 +12,4 @@ def get_entities(text):
 
 def get_sentiment(text):
     blob = TextBlob(text)
-    return blob.sentiment.polarity
+    return (blob.sentiment.polarity + 1) / 2
